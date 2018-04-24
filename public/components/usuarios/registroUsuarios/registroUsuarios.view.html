@@ -1,0 +1,35 @@
+<div class="container">
+    <form action="">
+
+        <label for="">Cédula</label>
+        <input type="text" ng-model="vm.nuevoUsuario.cedula" required>
+
+        <label for="">Primer nombre</label>
+        <input type="text" ng-model="vm.nuevoUsuario.primerNombre" required>
+
+        <label for="">Segundo nombre</label>
+        <input type="text" ng-model="vm.nuevoUsuario.segundoNombre">
+
+        <label for="">Primer apellido</label>
+        <input type="text" ng-model="vm.nuevoUsuario.primerApellido" required>
+
+        <label for="">Segundo apellido</label>
+        <input type="text" ng-model="vm.nuevoUsuario.segundoApelldo" required>
+
+        <label for="">Edad</label>
+        <input type="number" ng-model="vm.nuevoUsuario.edad" required>
+
+        <label for="">Correo electrónico</label>
+        <input type="email" ng-model="vm.nuevoUsuario.correo" required placeholder="juan@email.com">
+
+        <label for="">Teléfono</label>
+        <input type="tel" ng-model="vm.nuevoUsuario.telefono" required placeholder="8888-8888">
+
+        <label for="">Contraseña</label>
+        <input type="password" ng-model="vm.nuevoUsuario.contrasenna" required>
+
+        <button type="submit" class="btn btn-outline-success">Registrar</button>
+
+    </form>
+
+</div>
