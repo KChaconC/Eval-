@@ -1,8 +1,8 @@
 (() => {
-    'use strict';
-    angular
-      .module('evalu', [
-        'appRoutes', 
-        'ngMap'
-      ]);
-  })();
+  'use strict';
+  angular
+    .module('evalu', [
+      'appRoutes', 
+      'ngMap'
+    ]);
+})();
