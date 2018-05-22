@@ -16,5 +16,13 @@ class Usuario {
 }
 
 class Hotel {
-    constructor()
+    constructor(pId, pNombreHotel, pCalificacion, pPromedioCalificacion ) {
+        this.id = pId,
+        this.nombreHotel = pNombreHotel,
+        this.calificacion = pCalificacion,
+        this.promedioCalificacon = pPromedioCalificacion
+    }
+    
+
+
 }

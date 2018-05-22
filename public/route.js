@@ -17,6 +17,26 @@
             pageTitle: 'Evalu'
           }
         })
+
+        .state('registroUsuarios', {
+          url: '/registroUsuarios',
+          templateUrl: './components/usuarios/registroUsuarios/registroUsuarios.view.html',
+          data:{
+            pageTitle: 'Registro de usuarios'
+          },
+          params: {
+            objClienteTemp: ''
+          },
+          resolve: {
+            load: ['$ocLazyLoad', ($ocLazyLoad) => {
+              return $ocLazyLoad.load('./components/usuarios/registroUsuarios/registroUsuarios.controller.js')
+            }]
+          },
+          controller: 'controladorRegistroUsuarios',
+          controllerAs: 'vm'
+        })
+        
+
         $urlRouterProvider.otherwise('/');
     };
 })();

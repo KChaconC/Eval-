@@ -8,12 +8,11 @@
     // dataStorageFactory
     function servicioUsuarios($log, $http) {
 
-        const userService = {
-            activate: activate
-        };
-        return userService
+        // const userService = {
+        //     activate: activate
+        // };
+        // return userService
 
-        function activate() {
 
             const asyncLocalStorage = {
                 setItem: function (key, value) {
@@ -29,6 +28,6 @@
                 addUsuario: _addUsuario,
             }
             return publicAPI;
-        }
+
     }
 })();

@@ -4,7 +4,7 @@
         .module('evalu')
         .controller('controladorRegistroUsuarios', controladorRegistroUsuarios);
 
-    controladorRegistroUsuarios.$inject['$http', '$state', '$stateProvider', '$location', 'servicioUsuarios'];
+        controladorRegistroUsuarios.$inject['$http', '$state', '$stateProvider', '$location', 'servicioUsuarios'];
 
     vm.registroUsuario = (pNuevoUsuario) => {
         let objNuevoUsuario = new Usuario(pNuevoUsuario.cedula, pNuevoUsuario.primerNombre, pNuevoUsuario.segundoNombre, pNuevoUsuario.primerApellido, pNuevoUsuario.segundoApellido, pNuevoUsuario.edad, pNuevoUsuario.correo, pNuevoUsuario.telefono, pNuevoUsuario.contrasenna);
@@ -13,7 +13,7 @@
 
     if(registro == true) {
         let sesion = JSON.parse(sessionStorage.getItem('sesion'));
-        if (sesion == null || sesion.tipo != '5') {
+        if (sesion == null) {
 
           swal("Registro exitoso", "success", {
             button: "Aceptar",
@@ -35,4 +35,4 @@
       }
     }
 
-})
+})();
